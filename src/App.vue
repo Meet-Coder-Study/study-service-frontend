@@ -1,10 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="container px-4">
+    <AppNav />
+    <router-view />
   </div>
-  <router-view />
 </template>
+<script>
+import AppNav from "@/components/AppNav";
+import { defineComponent } from "vue";
+export default defineComponent({
+  components: { AppNav }
+});
+</script>
 
 <style>
 #app {
