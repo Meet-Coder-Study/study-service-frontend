@@ -1,11 +1,22 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="flex justify-center items-center flex-col">
+    <AppHeader />
+    <router-view />
   </div>
-  <router-view />
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
+import AppHeader from "@/components/AppHeader.vue";
 
+export default defineComponent({
+  components: {
+    AppHeader,
+  },
+  setup() {
+    return {};
+  },
+});
+</script>
 <style>
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
