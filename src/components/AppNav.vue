@@ -1,12 +1,14 @@
 <template>
-  <div class="flex justify-between p-4">
+  <div class="w-11/12 lg:w-1024 flex h-16 items-center">
     <router-link to="/">블로그</router-link>
-    <template v-if="loggined">
-      <button>로그인</button>
-    </template>
-    <template v-else>
-      <button>로그아웃</button>
-    </template>
+    <div class="ml-auto">
+      <template v-if="loggined">
+        <button>로그인</button>
+      </template>
+      <template v-else>
+        <button>로그아웃</button>
+      </template>
+    </div>
   </div>
 </template>
 
@@ -21,7 +23,7 @@ export default defineComponent({
     console.log(store.state.auth);
     const loggined = ref(true);
     return { loggined };
-  }
+  },
 });
 </script>
 

@@ -10,9 +10,9 @@ export default defineComponent({
   setup() {
     const msg = ref("반갑습니다.");
     return {
-      msg
+      msg,
     };
-  }
+  },
 });
 </script>
 
