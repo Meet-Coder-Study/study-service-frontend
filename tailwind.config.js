@@ -13,6 +13,7 @@ module.exports = {
     },
     extend: {
       width: {
+        "320": "320px",
         "1024": "1024px",
       },
     },
