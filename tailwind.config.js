@@ -8,6 +8,11 @@ module.exports = {
   },
   purge: ["./public/**/*.html", "./src/**/*.vue"], // 사용하지 않는 class들을 날려버린다.
   theme: {
+    lineClamp: {
+      1: 1,
+      2: 2,
+      3: 3,
+    },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
     },
@@ -19,7 +24,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("tailwindcss-line-clamp")],
   spacing: {
     "1024": "1024px",
     // md: '16px',
