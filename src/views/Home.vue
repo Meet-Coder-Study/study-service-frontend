@@ -1,18 +1,13 @@
 <template>
-  <div class="w-11/12 lg:w-1024">
-    <div class="">
-      <FeedCard />
-    </div>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
-  </div>
+  <FeedCardList />
 </template>
 
 <script lang="ts">
-import FeedCard from "@/components/FeedCard.vue";
+import FeedCardList from "@/components/FeedCardList.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
   components: {
-    FeedCard,
+    FeedCardList,
   },
 });
 // import { Options, Vue } from "vue-class-component";
