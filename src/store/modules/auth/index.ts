@@ -1,6 +1,6 @@
 // export type State = { user: null };
 export const state = {
-  user: null
+  user: null,
 };
 
 // export const actions = {
@@ -31,7 +31,7 @@ export const state = {
 
 export default {
   namespaced: true,
-  state
+  state,
   // actions,
   // mutations,
   // getters

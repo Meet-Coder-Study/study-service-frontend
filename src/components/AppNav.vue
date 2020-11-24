@@ -1,5 +1,5 @@
 <template>
-  <div class="w-11/12 lg:w-1024 flex h-16 items-center">
+  <div class="p-2 w-11/12 xl:w-1280 flex h-16 items-center">
     <router-link to="/">블로그</router-link>
     <div class="ml-auto">
       <template v-if="loggined">

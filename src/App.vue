@@ -1,7 +1,7 @@
 <template>
-  <div class="flex justify-center items-center flex-col">
+  <div class="w-full flex justify-center items-center flex-col">
     <AppNav />
-    <router-view />
+    <router-view class="w-11/12 xl:w-1280 flex" />
   </div>
 </template>
 <script>
