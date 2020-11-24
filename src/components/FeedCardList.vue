@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap">
+  <div class="flex flex-wrap ">
     <FeedCard v-for="item in dummy" :key="item.title" v-bind="item" />
   </div>
 </template>
