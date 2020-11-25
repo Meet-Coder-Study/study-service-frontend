@@ -1,6 +1,5 @@
 <template>
   <div class="text-left p-2">
-    router params : {{ $route.params.id }}
     <h1 class="font-extrabold text-gray-900 text-3xl xl:text-4xl">
       타이틀 타이틀 타이틀
       타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀

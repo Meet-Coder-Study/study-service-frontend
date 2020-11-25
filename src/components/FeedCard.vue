@@ -2,16 +2,18 @@
   <div
     class="w-full md:w-2-division lg:w-3-division xl:w-4-division text-left m-2"
   >
-    <img class="w-full" :src="thumbnail" :alt="title" />
-    <div class="p-2">
-      <h2 class="font-medium text-xl text-black mb-1 clamp-1">{{ title }}</h2>
-      <p class="clamp-3">
-        {{ content }}
-      </p>
-      <span class="text-sm text-gray-500">{{ date }}</span>
-      <span class="px-1 text-sm text-gray-500">·</span>
-      <span class="text-sm text-gray-500">{{ userName }}</span>
-    </div>
+    <router-link :to="`/blog/${id}`">
+      <img class="w-full" :src="thumbnail" :alt="title" />
+      <div class="p-2">
+        <h2 class="font-medium text-xl text-black mb-1 clamp-1">{{ title }}</h2>
+        <p class="clamp-3">
+          {{ content }}
+        </p>
+        <span class="text-sm text-gray-500">{{ date }}</span>
+        <span class="px-1 text-sm text-gray-500">·</span>
+        <span class="text-sm text-gray-500">{{ userName }}</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -20,22 +22,25 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   props: {
+    id: {
+      type: Number,
+      required: true,
+    },
     title: {
       type: String,
-      default: "타이틀 title1 title1 title1 title1 title1",
+      required: true,
     },
     content: {
       type: String,
-      default:
-        "해당 코드는 깃허브에 공개되어 있습니다. 해당 코드는 깃허브에 공개되어 있습니다. 해당 코드는 깃허브에 공개되어 있습니다. 해당 코드는 깃허브에 공개되어 있습니다. 해당 코드는 깃허브에 공개되어 있습니다. 해당 코드는 깃허브에 공개되어 있습니다. 해당 코드는 깃허브에 공개되어 있습니다.",
+      required: true,
     },
     date: {
       type: String,
-      default: "2020-11-16",
+      required: true,
     },
     userName: {
       type: String,
-      default: "username",
+      required: true,
     },
     thumbnail: {
       type: String,
