@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-wrap">
-    <FeedCard v-for="item in dummy" :key="item.title" v-bind="item" />
+  <div class="flex flex-wrap ">
+    <FeedCard v-for="item in dummy" :key="item.id" v-bind="item" />
   </div>
 </template>
 
